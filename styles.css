@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600&display=swap');
 
-:root{--ink:#3b1f2b;--muted:#775965;--cream:#fbf3f4;--paper:#fffafb;--blush:#ead2d9;--rose:#a84f69;--line:#dec7ce;--gold:#c49a66;--serif:"Italiana",Georgia,serif;--sans:"DM Sans",Arial,sans-serif}
+:root{--ink:#3b1f2b;--muted:#775965;--cream:#fbf3f4;--paper:#fffafb;--blush:#ead2d9;--rose:#a84f69;--line:#dec7ce;--gold:#c49a66;--serif:"Cormorant Garamond",Georgia,serif;--script:"Allura",cursive;--sans:"Manrope",Arial,sans-serif}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.7}
@@ -10,9 +10,8 @@ a{color:inherit}
 .skip-link:focus{left:8px}
 .site-header{background:rgba(255,250,251,.96);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20;backdrop-filter:blur(12px)}
 .nav-shell{max-width:1280px;margin:auto;min-height:86px;padding:0 4vw;display:flex;align-items:center;justify-content:space-between;gap:2rem}
-.brand,.footer-brand{text-decoration:none;display:flex;flex-direction:column;line-height:1;text-align:center;text-transform:uppercase}
-.brand span,.footer-brand span{font:2rem/1 var(--serif);letter-spacing:.08em}
-.brand small,.footer-brand small{font-size:.57rem;letter-spacing:.36em;margin-top:.35rem}
+.brand{display:block;width:218px;height:76px;overflow:hidden;text-decoration:none;flex:0 0 218px}
+.brand img{display:block;width:218px;height:auto;transform:translateY(-56px)}
 nav{display:flex;align-items:center;gap:2rem}
 nav a{text-decoration:none;font-size:.82rem;letter-spacing:.07em;padding:.5rem 0;border-bottom:1px solid transparent}
 nav a:hover,nav a.active{border-color:var(--rose)}
@@ -24,9 +23,9 @@ nav a:hover,nav a.active{border-color:var(--rose)}
 .hero{max-width:1440px;margin:auto;min-height:740px;display:grid;grid-template-columns:1.02fr .98fr;background:var(--cream)}
 .hero-copy{padding:8rem clamp(2rem,6vw,7rem) 4rem;display:flex;flex-direction:column;justify-content:center}
 .eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:.72rem;font-weight:600;color:var(--rose);margin:0 0 1rem}
-h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.08;margin-top:0}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.04;margin-top:0}
 h1{font-size:clamp(3.4rem,6.5vw,6.6rem);letter-spacing:-.025em;margin-bottom:1.7rem}
-h1 em{font-weight:400;color:var(--rose)}
+h1 em{font-family:var(--script);font-size:1.08em;font-weight:400;color:var(--rose);letter-spacing:0}
 h2{font-size:clamp(2.4rem,4vw,4.4rem);letter-spacing:-.02em;margin-bottom:1.5rem}
 h3{font-size:2rem;margin-bottom:.8rem}
 .lead{font-size:1.14rem;max-width:620px;color:var(--muted);margin:0 0 2rem}
@@ -65,8 +64,8 @@ footer>div:not(.footer-brand){display:flex;flex-direction:column;align-items:fle
 footer strong{text-transform:uppercase;letter-spacing:.14em;font-size:.7rem;margin-bottom:1rem;color:#e2a9b8}
 footer a{text-decoration:none;margin:.22rem 0}
 footer p{margin:0;color:#d8c1c8}
-.footer-brand{align-items:flex-start;text-align:left}
-.footer-brand span{font-size:2.8rem}
+.footer-brand{display:block;width:260px;height:150px;overflow:hidden}
+.footer-brand img{display:block;width:260px;height:auto;transform:translateY(-64px)}
 .light{color:#fff;margin-top:1rem}
 .copyright{grid-column:1/-1;border-top:1px solid #573645;padding-top:1.5rem!important;margin-top:2rem!important;font-size:.72rem}
 .page-hero{background:var(--cream);padding:9rem max(4vw,calc((100vw - 1180px)/2));text-align:center}
@@ -130,7 +129,8 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--rose);outline-of
 
 @media(max-width:900px){
   .nav-shell{min-height:auto;padding:1rem 4vw;flex-wrap:wrap;gap:.7rem}
-  .brand{align-items:flex-start}
+  .brand{width:190px;height:68px;flex-basis:190px}
+  .brand img{width:190px;transform:translateY(-49px)}
   .nav-shell nav{order:3;width:100%;justify-content:space-between;gap:.5rem;border-top:1px solid var(--line);padding-top:.6rem}
   .nav-shell nav a{font-size:.72rem}
   .desktop-cta{display:none}
