@@ -175,3 +175,86 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--rose);outline-of
   footer{grid-template-columns:1fr;padding:4rem 6vw}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
+
+/* Editorial redesign */
+.editorial-header .nav-shell{min-height:104px}
+.brand-image{display:block;width:210px;height:84px;overflow:hidden;white-space:normal;flex:0 0 210px}
+.brand-image img{display:block;width:210px;max-width:none;transform:translateY(-14px)}
+.editorial-hero{min-height:clamp(650px,80vh,860px);display:grid;place-items:center;text-align:center;color:#fff;position:relative;background:linear-gradient(rgba(28,12,20,.38),rgba(28,12,20,.58)),url("https://images.unsplash.com/photo-1634449571017-5fecfd26ad76?auto=format&fit=crop&q=88&w=2200") center 38%/cover}
+.editorial-hero::after{content:"";position:absolute;inset:1.2rem;border:1px solid rgba(255,255,255,.4);pointer-events:none}
+.editorial-hero-content{position:relative;z-index:1;max-width:850px;padding:7rem 5vw}
+.editorial-hero h1{font-size:clamp(4rem,7.5vw,7.6rem);letter-spacing:-.03em;margin-bottom:1.2rem;text-shadow:0 3px 24px rgba(0,0,0,.25)}
+.editorial-hero-content>p:not(.eyebrow){font-size:1.1rem;letter-spacing:.04em;margin:0 auto 2rem}
+.eyebrow-light{color:#f0c7d2}
+.welcome{display:grid;grid-template-columns:1fr 1fr;gap:10vw;align-items:center;padding-top:9rem;padding-bottom:9rem}
+.welcome-title h2{margin:0}
+.welcome-copy{max-width:560px}
+.welcome-copy>p{color:var(--muted)}
+.welcome-copy address{font-style:normal;border-left:1px solid var(--gold);padding-left:1.2rem;margin:2rem 0;color:var(--ink)}
+.editorial-quote{display:grid;grid-template-columns:1.1fr .9fr;min-height:720px;background:var(--cream)}
+.quote-image{background:linear-gradient(rgba(59,31,43,.08),rgba(59,31,43,.2)),url("https://images.unsplash.com/photo-1634449571017-5fecfd26ad76?auto=format&fit=crop&q=86&w=1600") center/cover}
+.quote-copy{padding:clamp(4rem,8vw,9rem);display:flex;flex-direction:column;justify-content:center}
+.quote-copy blockquote{font:clamp(2.6rem,4.4vw,4.8rem)/1.16 var(--serif);margin:0 0 2rem}
+.quote-copy>p:not(.eyebrow){color:var(--muted)}
+.service-showcase{padding-top:9rem;padding-bottom:9rem}
+.section-heading-center{text-align:center;max-width:760px;margin:0 auto 4.5rem}
+.section-heading-center>p:last-child{color:var(--muted);max-width:620px;margin-left:auto;margin-right:auto}
+.service-tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.service-tile{position:relative;min-height:520px;display:flex;flex-direction:column;justify-content:space-between;padding:2rem;color:#fff;text-decoration:none;overflow:hidden;background:linear-gradient(150deg,#5c2b3d,#a84f69)}
+.service-tile::before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(35,14,23,.78),rgba(35,14,23,.02) 70%);transition:.35s}
+.service-tile::after{content:"";position:absolute;width:360px;height:360px;border:1px solid rgba(255,255,255,.3);border-radius:50%;top:-160px;right:-150px;transition:.35s}
+.service-tile:hover::before{background:linear-gradient(0deg,rgba(35,14,23,.88),rgba(35,14,23,.14) 70%)}
+.service-tile:hover::after{transform:scale(1.12)}
+.service-tile>span,.service-tile>div{position:relative;z-index:1}
+.service-tile>span{font-size:.72rem;letter-spacing:.18em}
+.service-tile h3{font-size:clamp(2rem,3vw,3.4rem);margin-bottom:.5rem}
+.service-tile p{margin:0;max-width:300px;color:#f3e9ec}
+.tile-color{background:linear-gradient(150deg,#8e5e65,#d4a3a8)}
+.tile-cut{background:linear-gradient(150deg,#7a5b49,#c49a66)}
+.centered-action{text-align:center;margin-top:3rem}
+.statement{background:var(--ink);color:#fff;text-align:center;padding:9rem 5vw}
+.statement blockquote{font:clamp(2.8rem,5.3vw,5.8rem)/1.12 var(--serif);max-width:1100px;margin:0 auto 3rem}
+.experience{display:grid;grid-template-columns:1fr 1fr;gap:8vw;align-items:center;padding-top:9rem;padding-bottom:9rem}
+.experience-copy>p:not(.eyebrow){color:var(--muted)}
+.editorial-steps{list-style:none;margin:3rem 0 0;padding:0}
+.editorial-steps li{display:grid;grid-template-columns:50px 1fr;gap:1rem;padding:1.3rem 0;border-top:1px solid var(--line)}
+.editorial-steps li>span{color:var(--rose);font-size:.72rem;letter-spacing:.12em}
+.editorial-steps strong{text-transform:uppercase;font-size:.72rem;letter-spacing:.13em}
+.editorial-steps p{margin:.2rem 0 0;color:var(--muted)}
+.experience-visual{min-height:620px;background:var(--cream);display:grid;place-items:center;padding:3rem;position:relative}
+.experience-visual::before{content:"";position:absolute;inset:1.2rem;border:1px solid var(--line)}
+.experience-visual img{position:relative;z-index:1;width:min(620px,100%)}
+.social-band{text-align:center;padding-top:8rem;padding-bottom:8rem}
+.social-band h2{font-size:clamp(2.2rem,4.5vw,4.5rem)}
+.social-band>p:not(.eyebrow){color:var(--muted)}
+.editorial-footer>.footer-logo{display:block;width:290px;height:170px;overflow:hidden;align-self:start}
+.footer-logo img{display:block;width:310px;max-width:none;transform:translate(-10px,-25px)}
+
+@media(max-width:900px){
+  .editorial-header .nav-shell{min-height:auto}
+  .brand-image{width:180px;height:72px;flex-basis:180px}
+  .brand-image img{width:180px;transform:translateY(-12px)}
+  .welcome,.editorial-quote,.experience{grid-template-columns:1fr}
+  .editorial-quote{min-height:auto}
+  .quote-image{min-height:70vw}
+  .service-tiles{grid-template-columns:1fr}
+  .service-tile{min-height:420px}
+  .experience-visual{min-height:70vw}
+}
+
+@media(max-width:600px){
+  .brand-image{width:150px;height:60px;flex-basis:150px}
+  .brand-image img{width:150px;transform:translateY(-10px)}
+  .editorial-hero{min-height:680px}
+  .editorial-hero::after{inset:.65rem}
+  .editorial-hero h1{font-size:3.6rem}
+  .welcome{padding-top:6rem;padding-bottom:6rem}
+  .quote-copy{padding:5rem 6vw}
+  .service-showcase{padding-top:6rem;padding-bottom:6rem}
+  .service-tile{min-height:360px}
+  .statement{padding:6rem 6vw}
+  .experience{padding-top:6rem;padding-bottom:6rem}
+  .experience-visual{min-height:95vw;padding:1.5rem}
+  .editorial-footer>.footer-logo{width:240px;height:145px}
+  .footer-logo img{width:260px}
+}
