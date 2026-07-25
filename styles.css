@@ -10,9 +10,9 @@ a{color:inherit}
 .skip-link:focus{left:8px}
 .site-header{background:rgba(255,250,251,.96);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20;backdrop-filter:blur(12px)}
 .nav-shell{max-width:1280px;margin:auto;min-height:86px;padding:0 4vw;display:flex;align-items:center;justify-content:space-between;gap:2rem}
-.brand,.footer-brand{text-decoration:none;display:flex;flex-direction:column;line-height:1;text-align:center;text-transform:uppercase}
-.brand span,.footer-brand span{font:2rem/1 var(--serif);letter-spacing:.08em}
-.brand small,.footer-brand small{font-size:.57rem;letter-spacing:.36em;margin-top:.35rem}
+.brand,.footer-brand{text-decoration:none;display:flex;flex-direction:column;line-height:1;text-align:center}
+.brand span,.footer-brand span{font:2rem/1 var(--serif);letter-spacing:.025em;text-transform:none}
+.brand small,.footer-brand small{font-size:.64rem;font-weight:500;letter-spacing:.2em;margin-top:.45rem;text-transform:uppercase}
 nav{display:flex;align-items:center;gap:2rem}
 nav a{text-decoration:none;font-size:.82rem;letter-spacing:.07em;padding:.5rem 0;border-bottom:1px solid transparent}
 nav a:hover,nav a.active{border-color:var(--rose)}
@@ -66,7 +66,7 @@ footer strong{text-transform:uppercase;letter-spacing:.14em;font-size:.7rem;marg
 footer a{text-decoration:none;margin:.22rem 0}
 footer p{margin:0;color:#d8c1c8}
 .footer-brand{align-items:flex-start;text-align:left}
-.footer-brand span{font-size:2.8rem}
+.footer-brand span{font-size:2.55rem}
 .light{color:#fff;margin-top:1rem}
 .copyright{grid-column:1/-1;border-top:1px solid #573645;padding-top:1.5rem!important;margin-top:2rem!important;font-size:.72rem}
 .page-hero{background:var(--cream);padding:9rem max(4vw,calc((100vw - 1180px)/2));text-align:center}
