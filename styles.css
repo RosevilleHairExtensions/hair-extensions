@@ -180,7 +180,7 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--rose);outline-of
 .editorial-header .nav-shell{min-height:104px}
 .brand-image{display:block;width:210px;height:84px;overflow:hidden;white-space:normal;flex:0 0 210px}
 .brand-image img{display:block;width:210px;max-width:none;transform:translateY(-14px)}
-.editorial-hero{min-height:clamp(650px,80vh,860px);display:grid;place-items:center;text-align:center;color:#fff;position:relative;background:linear-gradient(rgba(28,12,20,.38),rgba(28,12,20,.58)),url("https://images.unsplash.com/photo-1634449571017-5fecfd26ad76?auto=format&fit=crop&q=88&w=2200") center 38%/cover}
+.editorial-hero{min-height:clamp(650px,80vh,860px);display:grid;place-items:center;text-align:center;color:#fff;position:relative;background:linear-gradient(rgba(28,12,20,.28),rgba(28,12,20,.58)),url("assets/brand-brunette-hero.png") center/cover}
 .editorial-hero::after{content:"";position:absolute;inset:1.2rem;border:1px solid rgba(255,255,255,.4);pointer-events:none}
 .editorial-hero-content{position:relative;z-index:1;max-width:850px;padding:7rem 5vw}
 .editorial-hero h1{font-size:clamp(4rem,7.5vw,7.6rem);letter-spacing:-.03em;margin-bottom:1.2rem;text-shadow:0 3px 24px rgba(0,0,0,.25)}
@@ -200,7 +200,7 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--rose);outline-of
 .section-heading-center{text-align:center;max-width:760px;margin:0 auto 4.5rem}
 .section-heading-center>p:last-child{color:var(--muted);max-width:620px;margin-left:auto;margin-right:auto}
 .service-tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
-.service-tile{position:relative;min-height:520px;display:flex;flex-direction:column;justify-content:space-between;padding:2rem;color:#fff;text-decoration:none;overflow:hidden;background:linear-gradient(150deg,#5c2b3d,#a84f69)}
+.service-tile{position:relative;min-height:520px;display:flex;flex-direction:column;justify-content:space-between;padding:2rem;color:#fff;text-decoration:none;overflow:hidden;background:linear-gradient(150deg,rgba(59,31,43,.2),rgba(59,31,43,.65)),url("assets/brand-brunette-hero.png") center/cover}
 .service-tile::before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(35,14,23,.78),rgba(35,14,23,.02) 70%);transition:.35s}
 .service-tile::after{content:"";position:absolute;width:360px;height:360px;border:1px solid rgba(255,255,255,.3);border-radius:50%;top:-160px;right:-150px;transition:.35s}
 .service-tile:hover::before{background:linear-gradient(0deg,rgba(35,14,23,.88),rgba(35,14,23,.14) 70%)}
@@ -209,8 +209,8 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--rose);outline-of
 .service-tile>span{font-size:.72rem;letter-spacing:.18em}
 .service-tile h3{font-size:clamp(2rem,3vw,3.4rem);margin-bottom:.5rem}
 .service-tile p{margin:0;max-width:300px;color:#f3e9ec}
-.tile-color{background:linear-gradient(150deg,#8e5e65,#d4a3a8)}
-.tile-cut{background:linear-gradient(150deg,#7a5b49,#c49a66)}
+.tile-color{background:linear-gradient(150deg,rgba(95,55,65,.1),rgba(95,55,65,.48)),url("assets/brand-blonde-result.png") center 35%/cover}
+.tile-cut{background:linear-gradient(150deg,rgba(59,31,43,.18),rgba(59,31,43,.64)),url("assets/brand-brunette-hero.png") 72% center/cover}
 .centered-action{text-align:center;margin-top:3rem}
 .statement{background:var(--ink);color:#fff;text-align:center;padding:9rem 5vw}
 .statement blockquote{font:clamp(2.8rem,5.3vw,5.8rem)/1.12 var(--serif);max-width:1100px;margin:0 auto 3rem}
@@ -224,6 +224,17 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--rose);outline-of
 .experience-visual{min-height:620px;background:var(--cream);display:grid;place-items:center;padding:3rem;position:relative}
 .experience-visual::before{content:"";position:absolute;inset:1.2rem;border:1px solid var(--line)}
 .experience-visual img{position:relative;z-index:1;width:min(620px,100%)}
+.photo-visual{padding:0;overflow:hidden}
+.photo-visual::before{z-index:2;border-color:rgba(255,255,255,.6)}
+.photo-visual img{width:100%;height:100%;object-fit:cover}
+.method-weft{background:linear-gradient(rgba(59,31,43,.12),rgba(59,31,43,.3)),url("https://images.unsplash.com/photo-1634449571017-5fecfd26ad76?auto=format&fit=crop&q=86&w=1400") center/cover}
+.method-ktip{background:linear-gradient(rgba(59,31,43,.08),rgba(59,31,43,.22)),url("assets/brand-blonde-result.png") center 35%/cover}
+.method-tape{background:linear-gradient(rgba(59,31,43,.12),rgba(59,31,43,.3)),url("assets/brand-brunette-hero.png") 70% center/cover}
+.care-hero{color:#fff;background:linear-gradient(rgba(35,14,23,.42),rgba(35,14,23,.64)),url("assets/brand-brunette-hero.png") center/cover}
+.care-hero>p:last-child{color:#f5e9ed}
+.about-hero{color:#fff;background:linear-gradient(rgba(35,14,23,.34),rgba(35,14,23,.64)),url("assets/brand-blonde-result.png") center 35%/cover}
+.about-hero>p:last-child{color:#f5e9ed}
+.story-image{background:linear-gradient(rgba(59,31,43,.08),rgba(59,31,43,.16)),url("https://images.unsplash.com/photo-1634449571017-5fecfd26ad76?auto=format&fit=crop&q=86&w=1400") center/cover}
 .social-band{text-align:center;padding-top:8rem;padding-bottom:8rem}
 .social-band h2{font-size:clamp(2.2rem,4.5vw,4.5rem)}
 .social-band>p:not(.eyebrow){color:var(--muted)}
